@@ -1,17 +1,153 @@
-/* Error: expected ":".
- *    ,
- * 13 | $fuente
- *    |        ^
- *    '
- *   style.scss 13:8  root stylesheet */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ":".\a    \2577 \a 13 \2502  $fuente\d\a    \2502         ^\a    \2575 \a   style.scss 13:8  root stylesheet';
+.attribution a {
+  color: #3e52a3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #090b1a;
+  color: white;
+  text-align: center;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.img-mobile > img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  background: #1b1938;
+  padding: 0;
+  border-radius: 0 0 10px 10pxd;
+}
+
+.container-text {
+  margin: 30px 25px 25px 18px;
+}
+
+h5 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+}
+
+.hightlightText {
+  color: #aa5cdb;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.container-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-info-1 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 2px;
+}
+
+.data-info-2 {
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+.container-data-info {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1400px) {
+  body {
+    text-align: left;
+  }
+
+  .img-desktop {
+    display: block;
+    max-width: 100%;
+  }
+
+  img {
+    border-radius: 0 10px 10px 0;
+    min-width: 100%;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 79%;
+    background: #1b1938;
+    padding: 0;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .container-text {
+    margin: 70px 125px 0 70px;
+  }
+
+  .container-data {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .container-data-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h5 {
+    font-size: 35px;
+  }
+
+  p {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 16px;
+  }
+
+  .data-info-1 {
+    font-size: 23px;
+  }
+
+  .data-info-2 {
+    font-size: 13px;
+  }
 }
