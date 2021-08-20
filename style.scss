@@ -1,0 +1,47 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+//Mi CSS
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+$fuente: font-family: 'Inter', sans-serif;
+$fuente2: font-family: 'Lexend Deca', sans-serif;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.card-color{
+background-color: hsl(244, 38%, 16%)
+}
+
+.center-card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  border-radius: 10px 10px 0 0;
+}
+
